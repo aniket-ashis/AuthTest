@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+
+import NavbarWithSlideInMenu from "@/components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
         <div className="w-full">
-          <Navbar />
+          <NavbarWithSlideInMenu />
           <div className="w-full h-screen">
             {children}
           </div>
